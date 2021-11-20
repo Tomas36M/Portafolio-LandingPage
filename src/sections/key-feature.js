@@ -3,48 +3,108 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Performance from 'assets/key-feature/performance.svg';
-import Partnership from 'assets/key-feature/partnership.svg';
-import Subscription from 'assets/key-feature/subscription.svg';
 import Support from 'assets/key-feature/support.svg';
-import FeatureCard from 'components/feature-card';
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
+    altText: 'html-5',
+    title: 'HTML-5',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     id: 2,
-    imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg",
+    altText: 'css3',
+    title: 'CSS3',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     id: 3,
-    imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    altText: 'javascript',
+    title: 'javaScript',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     id: 4,
-    imgSrc: Support,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    altText: 'node-js',
+    title: 'Node-js',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
+  {
+    id: 5,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     altText: 'Customer Support',
     title: 'Customer Support',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
-    id: 5,
-    imgSrc: Support,
+    id: 6,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+    altText: 'Customer Support',
+    title: 'Customer Support',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
+  {
+    id: 7,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
+    altText: 'Customer Support',
+    title: 'Customer Support',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
+  {
+    id: 8,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+    altText: 'Customer Support',
+    title: 'Customer Support',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
+  {
+    id: 9,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg",
+    altText: 'Customer Support',
+    title: 'Customer Support',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
+  {
+    id: 10,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    altText: 'Customer Support',
+    title: 'Customer Support',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
+  {
+    id: 11,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
+    altText: 'Customer Support',
+    title: 'Customer Support',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
+  {
+    id: 12,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" ,
+    altText: 'Customer Support',
+    title: 'Customer Support',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
+  {
+    id: 13,
+    imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" ,
     altText: 'Customer Support',
     title: 'Customer Support',
     text:
@@ -54,8 +114,8 @@ const data = [
 
 export default function KeyFeature() {
   return (
-    <section id="feature" sx={{ variant: 'section.KeyFeature', pt: '30px' }}>
-      <Container>
+    <section id="feature" sx={{ variant: 'section.KeyFeature', pt: '' }}>
+      <Container sx={{pb: '40px'}}>
         <SectionHeader slogan="Slogan" title="This is my Title" />
         <Grid sx={styles.grid}>
           {data.map((item) => (

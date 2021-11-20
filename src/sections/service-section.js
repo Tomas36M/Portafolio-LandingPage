@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 /** @jsx jsx */
-import { jsx, Container, Box, Grid, Text, Heading, Button, Image } from 'theme-ui';
+import {
+  jsx,
+  Container,
+  Box,
+  Grid,
+  Text,
+  Heading,
+  // Button,
+  Image,
+} from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import TextFeature from 'components/text-feature';
-import ModalVideo from 'react-modal-video';
-import { IoIosPlay } from 'react-icons/io';
+// import ModalVideo from 'react-modal-video';
+// import { IoIosPlay } from 'react-icons/io';
 
-import ServiceThumb from 'assets/service-thumb.png';
+import ProfilePic from 'assets/profileImg.jpg'
 import shapePattern from 'assets/shape-pattern1.png';
 
 import Smart from 'assets/services/smart.svg';
@@ -14,7 +23,7 @@ import Secure from 'assets/services/secure.svg';
 
 const data = {
   subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  title: 'Front-End Developer & UX-UI Designer ',
   features: [
     {
       id: 1,
@@ -36,8 +45,55 @@ const data = {
 };
 
 export default function ServiceSection() {
+  // modal popup video handler
+  // const [videoOpen, setVideoOpen] = useState(false);
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   setVideoOpen(true);
+  // };
   return (
-    <h1>Service Section</h1>
+    <section sx={{ variant: 'section.services' }} id="home">
+      <Container sx={styles.containerBox}>
+        <Box sx={styles.thumbnail}>
+          <Image src={ProfilePic} alt="Thumbnail" />
+          {/* <Button
+            sx={styles.videoBtn}
+            onClick={handleClick}
+            aria-label="Play Button"
+          >
+            <span>
+              <IoIosPlay />
+            </span>
+          </Button> */}
+
+          <Box sx={styles.shapeBox}>
+            <Image src={shapePattern} alt="Shape" />
+          </Box>
+        </Box>
+        <Box sx={styles.contentBox}>
+          <TextFeature subTitle={data.subTitle} title={data.title} />
+
+          <Grid sx={styles.grid}>
+            {data.features.map((item) => (
+              <Box sx={styles.card} key={item.id}>
+                <Image src={item.imgSrc} alt={item.altText} sx={styles.icon} />
+
+                <Box sx={styles.wrapper}>
+                  <Heading sx={styles.wrapper.title}>{item.title}</Heading>
+                  <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
+                </Box>
+              </Box>
+            ))}
+          </Grid>
+        </Box>
+      </Container>
+      {/* <ModalVideo
+        channel="youtube"
+        isOpen={videoOpen}
+        videoId="ZNA9rmDsYVE"
+        onClose={() => setVideoOpen(false)}
+      /> */}
+    </section>
   );
 }
 
@@ -59,22 +115,25 @@ const styles = {
     position: 'relative',
   },
   containerBox: {
+    pt: '75px',
     display: 'flex',
     alignItems: ['flex-start', null, null, 'center'],
     justifyContent: ['flex-start', null, null, 'space-between'],
     flexDirection: ['column', null, null, 'row'],
-    pb: [0, null, null, null, null, 7],
+    // pb: [0, null, null, null, null, 7],
   },
   thumbnail: {
+    pt: '30px',
     mr: ['auto', null, null, 6, 60, 85],
     order: [2, null, null, 0],
     ml: ['auto', null, null, 0],
     display: 'inline-flex',
     position: 'relative',
     '> img': {
+      borderRadius: '20px',
       position: 'relative',
       zIndex: 1,
-      height: [310, 'auto'],
+      height: [320, 'auto'],
     },
   },
   shapeBox: {
@@ -130,7 +189,7 @@ const styles = {
     width: ['100%', null, null, 315, 390, 450, null, 500],
     flexShrink: 0,
     mb: [7, null, 60, 0],
-    textAlign: ['center', null, null, 'left'],
+    textAlign: ['', null, null, 'left'],
   },
   grid: {
     pr: [2, 0, null, null, 6, '70px'],

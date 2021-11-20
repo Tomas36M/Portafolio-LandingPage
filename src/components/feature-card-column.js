@@ -32,12 +32,15 @@ const styles = {
     ml: ['auto', null, '-13px'],
     mb: -2,
     width: ['80px', null, null, '90px', null, 'auto'],
+    height: '80px'
   },
   wrapper: {
+    pt: '15px',
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
     title: {
+      pr: '12px',
       textAlign: 'center',
       fontSize: 3,
       color: 'heading_secondary',
