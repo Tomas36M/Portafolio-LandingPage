@@ -3,7 +3,6 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Support from 'assets/key-feature/support.svg';
 
 const data = [
   {
@@ -114,9 +113,9 @@ const data = [
 
 export default function KeyFeature() {
   return (
-    <section id="feature" sx={{ variant: 'section.KeyFeature', pt: '' }}>
+    <section id="feature" sx={{ variant: 'section.KeyFeature', pt: '40px' }}>
       <Container sx={{pb: '40px'}}>
-        <SectionHeader slogan="Slogan" title="This is my Title" />
+        <SectionHeader slogan="Skills" title="This are the tecnologies i have expreirnce with" />
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <FeatureCardColumn

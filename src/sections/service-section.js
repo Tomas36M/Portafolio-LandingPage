@@ -15,21 +15,21 @@ import TextFeature from 'components/text-feature';
 // import ModalVideo from 'react-modal-video';
 // import { IoIosPlay } from 'react-icons/io';
 
-import ProfilePic from 'assets/profileImg.jpg'
+import ProfilePic from 'assets/profileImg2.png'
 import shapePattern from 'assets/shape-pattern1.png';
 
 import Smart from 'assets/services/smart.svg';
 import Secure from 'assets/services/secure.svg';
 
 const data = {
-  subTitle: 'our services',
+  subTitle: 'The best way to predict the future is to code it',
   title: 'Front-End Developer & UX-UI Designer ',
   features: [
     {
       id: 1,
       imgSrc: Smart,
       altText: 'Smart Features',
-      title: 'Smart Features',
+      title: '',
       text:
         'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
     },
@@ -55,7 +55,7 @@ export default function ServiceSection() {
     <section sx={{ variant: 'section.services' }} id="home">
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ProfilePic} alt="Thumbnail" />
+          <Image sx={{height: '400px'}} src={ProfilePic} alt="Thumbnail" />
           {/* <Button
             sx={styles.videoBtn}
             onClick={handleClick}

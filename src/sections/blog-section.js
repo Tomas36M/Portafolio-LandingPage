@@ -6,9 +6,9 @@ import PostCard from 'components/post-card.js';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 import ProyectEcommerce from 'assets/blog/ecommerce.png'
-// import PostThumb1 from 'assets/blog/1.jpg';
-// import PostThumb2 from 'assets/blog/2.jpg';
-// import PostThumb3 from 'assets/blog/3.jpg';
+import ProyectCrypto from 'assets/blog/React-Crypto.png'
+import ProycetWeather from 'assets/blog/Weather.png'
+import ProyectGiphys from 'assets/blog/Giphys.png'
 
 const data = [
     {
@@ -22,27 +22,27 @@ const data = [
     },
     {
         id: 2,
-        // imgSrc: PostThumb2,
-        // altText: 'Creative',
-        // postLink: '#',
+        imgSrc: ProyectCrypto,
+        altText: 'crypto-currency',
+        postLink: '#',
         title: 'Product Marketing: Creative Market',
         authorName: 'James Carter',
         date: 'Oct 20, 2020',
     },
     {
         id: 3,
-        // imgSrc: PostThumb3,
-        // altText: 'Startup',
-        // postLink: '#',
+        imgSrc: ProycetWeather,
+        altText: 'Startup',
+        postLink: '#',
         title: 'Product Marketing: Startup Product Sales',
         authorName: 'Aston Aagar',
         date: 'Oct 20, 2020',
     },
     {
         id: 4,
-        // imgSrc: PostThumb2,
-        // altText: 'Creative',
-        // postLink: '#',
+        imgSrc: ProyectGiphys,
+        altText: 'Creative',
+        postLink: '#',
         title: 'Product Marketing: Creative Market',
         authorName: 'James Carter',
         date: 'Oct 20, 2020',
@@ -74,11 +74,11 @@ const responsive = {
 
 export default function BlogSection() {
     return (
-        <section sx={{ variant: 'section.news' }}>
-            <Container sx={{ pt: '80px',}}>
+        <section id='proyects' sx={{ variant: 'section.news' }}>
+            <Container sx={{ pt: '40px'}}>
                 <SectionHeader
-                    slogan="our blog"
-                    title="Explore our products for your business solution"
+                    slogan="Proyects"
+                    title="Explore some of the personal proyects i have work with"
                 />
 
                 <Box sx={styles.carouselWrapper}>

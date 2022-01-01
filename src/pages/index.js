@@ -15,8 +15,8 @@ export default function IndexPage() {
         <Layout>
           <SEO title="NextJS Landing Page" />
           <ServiceSection />
-          <KeyFeature />
-          <BlogSection />
+          <KeyFeature />  
+          <BlogSection />     
         </Layout>
     </ThemeProvider>
   );

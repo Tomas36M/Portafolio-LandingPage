@@ -49,6 +49,7 @@ const styles = {
         display: 'flex',
         img: {
             width: '100%',
+            height: '200px'
         },
     },
     postContent: {
