@@ -9,22 +9,29 @@ import menuItems from './header.data';
 
 export default function Header({ className }) {
   return (
-      <header sx={styles.header} className={className} id="Header">
-        <Container sx={styles.container}>
-          <Logo src={LogoDark}/>
-            <Flex as="nav" sx={styles.nav}>
-              {menuItems.map((element, i) => (
-                <Link activeClass="active" to={element.path} spy={true} smooth={true} offset={-70} duration={500} key={i}>
-                  {element.label}
-                </Link>
-              ))}
-            </Flex>
-            <Button className="donate__btn" variant="secondary" aria-label="Get Started">
-              Get CV
-            </Button>
-            <MobileDrawer />
-        </Container>
-      </header>
+    <header sx={styles.header} className={className} id="Header">
+      <Container sx={styles.container}>
+        <Logo src={LogoDark} />
+        <Flex as="nav" sx={styles.nav}>
+          {menuItems.map((element, i) => (
+            <Link activeClass="active" to={element.path} spy={true} smooth={true} offset={-70} duration={500} key={i}>
+              {element.label}
+            </Link>
+          ))}
+        </Flex>
+        <Link href='https://docs.google.com/document/d/1n2f0S6BS6wFquCOyXO3T6IGh9gjWT6DR/edit?usp=sharing&ouid=107902693137713244372&rtpof=true&sd=true'>
+          
+          <Button className="donate__btn" variant="secondary" aria-label="Get Started">
+            <a target='_blank'>GET CV</a>
+          </Button>
+          
+        </Link>
+        {/* <Button className="github__btn" variant="secondary" aria-label="Get Started">
+              Github
+            </Button> */}
+        <MobileDrawer />
+      </Container>
+    </header>
   );
 }
 
@@ -57,7 +64,16 @@ const styles = {
       flexShrink: 0,
       mr: [15, 20, null, null, 0],
       ml: ['auto', null, null, null, 0],
+
     },
+    '.github__btn': {
+      color: 'black',
+      borderColor: 'black',
+      flexShrink: 0,
+      mr: [15, 20, null, null, 0],
+      ml: ['auto', null, null, null, '10px'],
+    },
+
     '&.sticky': {
       position: 'fixed',
       backgroundColor: 'background',

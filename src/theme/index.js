@@ -92,7 +92,7 @@ export default {
       pb: [8, null, 9, null, null, 10, null, '170px'],
     },
     news: {
-      pb: [8, null, 9, null, null, 10, null, '170px'],
+      pb: '30px'
     },
     coreFeature: {
       pb: [8, null, 9, null, null, 10, null, '170px'],
@@ -104,6 +104,7 @@ export default {
       overflow: 'hidden',
     },
     services: {
+      pt: 0,
       pb: ['90px', null, 9, null, null, 10, null, '150px'],
     },
     pricing: {

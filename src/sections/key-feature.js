@@ -11,7 +11,7 @@ const data = [
     altText: 'html-5',
     title: 'HTML-5',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content.',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const data = [
     altText: 'css3',
     title: 'CSS3',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML.',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const data = [
     altText: 'javascript',
     title: 'javaScript',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.',
   },
   {
     id: 4,
@@ -35,87 +35,87 @@ const data = [
     altText: 'node-js',
     title: 'Node-js',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Its a JavaScript free and open source cross-platform for server-side programming that allows users to build network applications quickly.'
   },
   {
     id: 5,
     imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'React',
+    title: 'React',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'React is a declarative, efficient, and flexible JavaScript library for building user interfaces.',
   },
   {
     id: 6,
     imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'NPM',
+    title: 'npm',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'npm is the package manager for the Node JavaScript platform.',
   },
   {
     id: 7,
     imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Boostrap',
+    title: 'Boostrap',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Bootstrap is a free and open source front end development framework for the creation of websites and web apps.',
   },
   {
     id: 8,
     imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'material-ui',
+    title: 'Material-UI',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Material-UI is simply a library that allows us to import and use different components to create a user interface in our React applications.',
   },
   {
     id: 9,
     imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg",
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Babel',
+    title: 'Babel',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript',
   },
   {
     id: 10,
     imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'git',
+    title: 'Git-Github',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.',
   },
   {
     id: 11,
     imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Next-js',
+    title: 'Next-js',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'It lets you build server-side rendering and static web applications using React.',
   },
   {
     id: 12,
     imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" ,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'SASS',
+    title: 'SASS',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).',
   },
   {
     id: 13,
     imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" ,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'VS-Code',
+    title: 'VS-Code',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux and macOS.',
   }
 ];
 
 export default function KeyFeature() {
   return (
-    <section id="feature" sx={{ variant: 'section.KeyFeature', pt: '40px' }}>
+    <section id="feature" sx={{ variant: 'section.KeyFeature' }}>
       <Container sx={{pb: '40px'}}>
-        <SectionHeader slogan="Skills" title="This are the tecnologies i have expreirnce with" />
+        <SectionHeader slogan="Skills" title="These are the technologies I have worked with" />
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <FeatureCardColumn

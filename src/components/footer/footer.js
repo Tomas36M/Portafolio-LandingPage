@@ -5,7 +5,7 @@ import data from './footer.data';
 import FooterLogo from 'assets/logo.svg';
 export default function Footer() {
   return (
-    <footer sx={styles.footer}>
+    <footer sx={styles.footer} id='contact'>
       <Container>
         <Grid sx={styles.widgets}>
           {data.widgets.map((item) => (

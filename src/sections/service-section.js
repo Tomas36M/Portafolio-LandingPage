@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 /** @jsx jsx */
 import {
   jsx,
@@ -18,28 +18,28 @@ import TextFeature from 'components/text-feature';
 import ProfilePic from 'assets/profileImg2.png'
 import shapePattern from 'assets/shape-pattern1.png';
 
-import Smart from 'assets/services/smart.svg';
-import Secure from 'assets/services/secure.svg';
+// import Smart from 'assets/services/smart.svg';
+// import Secure from 'assets/services/secure.svg';
 
 const data = {
   subTitle: 'The best way to predict the future is to code it',
-  title: 'Front-End Developer & UX-UI Designer ',
+  title: 'Junior Full-Stack Developer & UX-UI Designer ',
   features: [
     {
       id: 1,
-      imgSrc: Smart,
-      altText: 'Smart Features',
-      title: '',
+      // imgSrc: ,
+      // altText: 'Dev.f',
+      title: 'Student at Dev.f',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'I am a student at Dev.f, a coding acedemy from Mexico City, since May 2021.In the last 9 months I have learned differnt technologies for web development. I successfully completed the front-end modules, and I am currently coursing the technologies realted with back-end development.',
     },
     {
       id: 2,
-      imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      // imgSrc: ,
+      // altText: 'Secure Contents',
+      title: 'An empathic tecnologie enthusiast',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'One of my great virtues is empathy, which makes it easier for me to work in teams and collaborate with others. Also, im an ethusiast about learning new things, specially new techonologies. That has made my journey as a coder successfull and joyful.',
     },
   ],
 };
@@ -76,7 +76,7 @@ export default function ServiceSection() {
           <Grid sx={styles.grid}>
             {data.features.map((item) => (
               <Box sx={styles.card} key={item.id}>
-                <Image src={item.imgSrc} alt={item.altText} sx={styles.icon} />
+                {/* <Image src={item.imgSrc} alt={item.altText} sx={styles.icon} /> */}
 
                 <Box sx={styles.wrapper}>
                   <Heading sx={styles.wrapper.title}>{item.title}</Heading>
@@ -134,6 +134,7 @@ const styles = {
       position: 'relative',
       zIndex: 1,
       height: [320, 'auto'],
+      width: '100%'
     },
   },
   shapeBox: {
@@ -186,10 +187,11 @@ const styles = {
     },
   },
   contentBox: {
-    width: ['100%', null, null, 315, 390, 450, null, 500],
+    pt: '50px',
+    width: ['100%', null, null, 315, 390, '50%', null, 500],
     flexShrink: 0,
     mb: [7, null, 60, 0],
-    textAlign: ['', null, null, 'left'],
+    textAlign: ['left', null, null, 'left'],
   },
   grid: {
     pr: [2, 0, null, null, 6, '70px'],
@@ -230,6 +232,7 @@ const styles = {
       fontSize: [1, null, null, '14px', 1],
       fontWeight: 400,
       lineHeight: 1.9,
+      width: '100%'
     },
   },
   videoWrapper: {

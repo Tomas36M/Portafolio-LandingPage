@@ -9,44 +9,54 @@ import ProyectEcommerce from 'assets/blog/ecommerce.png'
 import ProyectCrypto from 'assets/blog/React-Crypto.png'
 import ProycetWeather from 'assets/blog/Weather.png'
 import ProyectGiphys from 'assets/blog/Giphys.png'
+import ProyectPokedex from 'assets/blog/pokedex.png'
 
 const data = [
     {
         id: 1,
         imgSrc: ProyectEcommerce,
         altText: 'ecommerce',
-        postLink: '#',
-        title: 'Product Marketing: Monopoly Market',
-        authorName: 'Cali Cartel',
-        date: 'Oct 20, 2020',
+        postLink: 'https://github.com/Tomas36M/Dev.f/tree/master/Proyectos/Proyectos%20React/Proyecto%20Final/e-commerce',
+        title: 'Ecommerce using React and Material-UI',
+        authorName: 'Tomas Munevar',
+        date: '',
     },
     {
         id: 2,
         imgSrc: ProyectCrypto,
         altText: 'crypto-currency',
-        postLink: '#',
-        title: 'Product Marketing: Creative Market',
-        authorName: 'James Carter',
-        date: 'Oct 20, 2020',
+        postLink: 'https://github.com/Tomas36M/Dev.f/tree/master/Proyectos/Proyectos%20React/react-crypto',
+        title: 'Crypto Coin using CoinGecko API and React',
+        authorName: 'Tomas Munevar',
+        date: '',
     },
     {
         id: 3,
         imgSrc: ProycetWeather,
-        altText: 'Startup',
-        postLink: '#',
-        title: 'Product Marketing: Startup Product Sales',
-        authorName: 'Aston Aagar',
-        date: 'Oct 20, 2020',
+        altText: 'Weather-app',
+        postLink: 'https://github.com/Tomas36M/Dev.f/tree/master/Proyectos/Proyectos%20React/react-weather',
+        title: 'Weather Widget using OpenWeather Api and React',
+        authorName: 'Tomas Munevar',
+        date: '',
     },
     {
         id: 4,
         imgSrc: ProyectGiphys,
-        altText: 'Creative',
-        postLink: '#',
-        title: 'Product Marketing: Creative Market',
-        authorName: 'James Carter',
-        date: 'Oct 20, 2020',
+        altText: 'giphy',
+        postLink: 'https://github.com/Tomas36M/Dev.f/tree/master/Proyectos/Proyectos%20React/react-giphy',
+        title: 'Search for Giphys using Giphy Api',
+        authorName: 'Tomas Munevar',
+        date: '',
     },
+    {
+        id: 5,
+        imgSrc: ProyectPokedex,
+        altText: 'pokedex',
+        postLink: 'https://github.com/Tomas36M/Dev.f/tree/master/Proyectos/Proyectos%20React/react-giphy',
+        title: 'Pokedex using Pokeapi, HTML, CSS and javaScript',
+        authorName: 'Tomas Munevar',
+        date: '',
+    }
 ];
 
 const responsive = {
@@ -75,12 +85,11 @@ const responsive = {
 export default function BlogSection() {
     return (
         <section id='proyects' sx={{ variant: 'section.news' }}>
-            <Container sx={{ pt: '40px'}}>
+            <Container>
                 <SectionHeader
                     slogan="Proyects"
-                    title="Explore some of the personal proyects i have work with"
+                    title="Explore some of my personal proyects"
                 />
-
                 <Box sx={styles.carouselWrapper}>
                     <Carousel
                         additionalTransfrom={0}
@@ -126,6 +135,7 @@ const styles = {
     carouselWrapper: {
         '.carousel-container': {
             mx: -3,
+            pt: '20px'
         },
     },
 };

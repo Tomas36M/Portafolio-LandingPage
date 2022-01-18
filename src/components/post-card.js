@@ -17,7 +17,7 @@ export default function PostCard({
 
             <Flex sx={styles.postContent}>
                 <Heading sx={styles.title}>
-                    <Link href={postLink} variant="blog">
+                    <Link href={postLink} variant="blog" target='_blank'>
                         {title}
                     </Link>
                 </Heading>
@@ -40,7 +40,8 @@ const styles = {
         transition: 'all 0.3s',
         '&:hover': {
             boxShadow: '0px 5px 20px rgba(38,78,118,0.15)',
-        },
+            transform: 'scale(1.1)',
+        }
     },
 
     thumbnail: {

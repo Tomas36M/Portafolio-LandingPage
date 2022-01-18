@@ -8,15 +8,17 @@ import Layout from 'components/layout';
 import KeyFeature from '../sections/key-feature';
 import ServiceSection from '../sections/service-section';
 import BlogSection from 'sections/blog-section';
+import TestimonialCard from 'sections/testimonial';
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="NextJS Landing Page" />
+          <SEO title="Tomas Munevar Escalante" />
           <ServiceSection />
           <KeyFeature />  
-          <BlogSection />     
+          <BlogSection />   
+          <TestimonialCard />
         </Layout>
     </ThemeProvider>
   );
